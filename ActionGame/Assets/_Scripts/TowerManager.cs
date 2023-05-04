@@ -17,7 +17,7 @@ public class TowerManager : MonoBehaviour
 
     [Header("Objects")]
     public GameObject TowerPreFab;
-    public GameObject CurrentTarget;
+    public GameObject CurrentTarget = null;
 
     private void DestroyTower()
     {
