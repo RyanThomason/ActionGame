@@ -66,7 +66,7 @@ public class TowerManager : MonoBehaviour
                 RotateTowardsTarget();
                 if (Vector3.Distance(transform.position, CurrentTarget.transform.position) <= TowerRange)
                     {
-                        CurrentTarget.GetComponent<EnemyScript>().TakeDamage(TowerDamage);    // Through the script component of the Enemy GameObject, call TakeDamage
+                        CurrentTarget.GetComponent<Enemy>().TakeDamage(TowerDamage);    // Through the script component of the Enemy GameObject, call TakeDamage
                         attackTimer = 0f;   // reset timer
                     }
             }
