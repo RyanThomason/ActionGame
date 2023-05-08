@@ -7,6 +7,7 @@ public class EnemySpawner : MonoBehaviour
     //Most code replicated from Space Shmup
     [Header("Inscribed")]
     public GameObject prefabEnemy;
+    public GameObject enemySpawner;
     public float enemySpawnPerSecond = 1f;
     public int waveCount = 0;
     public int waveMax = 5;
@@ -14,6 +15,11 @@ public class EnemySpawner : MonoBehaviour
 
     //On awake, start the first wave
     void Awake() {
+        StartCoroutine(StartWave());
+    }
+
+    //Method to start the next wave when a button is clicked by the player  
+    public void OnClick() {
         StartCoroutine(StartWave());
     }
 
@@ -59,7 +65,7 @@ public class EnemySpawner : MonoBehaviour
 
     //Spawn enemies on the enemySpawner position
     public void SpawnEnemy() {
-        Vector3 pos = transform.position;
+        Vector3 pos = enemySpawner.transform.position;
         GameObject go = Instantiate<GameObject>(prefabEnemy);
         go.transform.position = pos;
     }
