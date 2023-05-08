@@ -5,11 +5,13 @@ using UnityEngine;
 public class TowerManager : MonoBehaviour
 {
     [Header("Properties")]
+    public int TowerCost;
     public float TowerHealth;
     public float TowerRange = 5f;
     public float TowerDamage = 10f;
     public float attackSpeed = 3f;
     public float rotateSpeed = 10f;
+    public bool targetFarthestEnemies = false;
 
     private float attackTimer = 0f;
     private Transform target;
@@ -24,7 +26,7 @@ public class TowerManager : MonoBehaviour
 
     }
 
-    private GameObject GetNearestTarget()
+    private GameObject GetTarget()
     {
         GameObject[] possibleTargets = GameObject.FindGameObjectsWithTag("Enemy");
 
@@ -33,26 +35,37 @@ public class TowerManager : MonoBehaviour
             return null;
         }
 
-        GameObject nearestTarget = possibleTargets[0]; // Grab the first element of the possibleTargets array as it is presumably the earliest and closest
-        float shortestTargetDist = Vector3.Distance(TowerPreFab.transform.position, nearestTarget.transform.position);
+        GameObject target = possibleTargets[0]; // Grab the first element of the possibleTargets array as it is presumably the earliest and closest
+        float targetDist = Vector3.Distance(TowerPreFab.transform.position, nearestTarget.transform.position);
         
         foreach (GameObject possibleTarget in possibleTargets)
         {
             float distanceFromTower = Vector3.Distance(TowerPreFab.transform.position, possibleTarget.transform.position);
 
-            if (distanceFromTower < shortestTargetDist)
-            {  
-                shortestTargetDist = distanceFromTower; // Replace the shortestTargetDist
-                nearestTarget = possibleTarget;
+            if (targetFarthestEnemies == true)
+            {
+                if (distanceFromTower > farthestDistance)
+                {
+                    farthestDistance = distanceFromTower;   // Replace the targetDist
+                    target = possibleTarget;
+                }
+            }
+            else
+            {
+                if (distanceFromTower < targetDist)
+                {  
+                    targetDist = distanceFromTower; // Replace the targetDist
+                    target = possibleTarget;
+                }
             }
         }
 
-        return nearestTarget;
+        return target;
     }
 
     void Update()
     {
-        GetNearestTarget();
+        GetTarget();
         if (TowerHealth < 0)
         {
             DestroyTower();
@@ -60,7 +73,7 @@ public class TowerManager : MonoBehaviour
         attackTimer += Time.deltaTime;
         if (attackTimer >= attackSpeed) // determine if the amount of time has passed to attack again
         {
-            CurrentTarget = GetNearestTarget();
+            CurrentTarget = GetTarget();
             if (CurrentTarget != null)  // if the CurrentTarget is found; closest one possible, initiate attack sequence
             {
                 RotateTowardsTarget();
