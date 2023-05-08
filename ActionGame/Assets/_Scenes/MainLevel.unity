@@ -406,6 +406,7 @@ MonoBehaviour:
   attackSpeed: 2
   rotateSpeed: 8
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -527,6 +528,7 @@ MonoBehaviour:
   attackSpeed: 2
   rotateSpeed: 8
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -745,6 +747,7 @@ MonoBehaviour:
   attackSpeed: 4
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: a6f2ac887e3f7614a81ba80193741148, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -968,6 +971,7 @@ MonoBehaviour:
   attackSpeed: 3
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -1169,6 +1173,7 @@ MonoBehaviour:
   attackSpeed: 3
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -1290,9 +1295,72 @@ MonoBehaviour:
   attackSpeed: 4
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: a6f2ac887e3f7614a81ba80193741148, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
+--- !u!1 &319604648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 319604651}
+  - component: {fileID: 319604650}
+  - component: {fileID: 319604649}
+  m_Layer: 0
+  m_Name: TurnRIght (5)
+  m_TagString: TurnRight
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &319604649
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319604648}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &319604650
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319604648}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 1, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &319604651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319604648}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 53.09, y: -14.5, z: -48.83146}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 792224160}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &376814994
 GameObject:
   m_ObjectHideFlags: 0
@@ -1508,6 +1576,7 @@ MonoBehaviour:
   attackSpeed: 3
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -1729,6 +1798,7 @@ MonoBehaviour:
   attackSpeed: 3
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -1850,6 +1920,7 @@ MonoBehaviour:
   attackSpeed: 4
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: a6f2ac887e3f7614a81ba80193741148, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -2447,6 +2518,7 @@ MonoBehaviour:
   attackSpeed: 4
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: a6f2ac887e3f7614a81ba80193741148, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -2547,6 +2619,130 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 675193635}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &678886961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 678886964}
+  - component: {fileID: 678886963}
+  - component: {fileID: 678886962}
+  m_Layer: 0
+  m_Name: TurnRIght (1)
+  m_TagString: TurnRight
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &678886962
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678886961}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &678886963
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678886961}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 1, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &678886964
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678886961}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 72.7261, y: -14.5, z: 11.13}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 792224160}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &679863003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 679863006}
+  - component: {fileID: 679863005}
+  - component: {fileID: 679863004}
+  m_Layer: 0
+  m_Name: TurnRIght (2)
+  m_TagString: TurnRight
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &679863004
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679863003}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &679863005
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679863003}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 1, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &679863006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679863003}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 72.28, y: -14.5, z: -33.83146}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 792224160}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &683153324
 GameObject:
   m_ObjectHideFlags: 0
@@ -2665,9 +2861,72 @@ MonoBehaviour:
   attackSpeed: 2
   rotateSpeed: 8
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
+--- !u!1 &697750457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 697750460}
+  - component: {fileID: 697750459}
+  - component: {fileID: 697750458}
+  m_Layer: 0
+  m_Name: TurnLeft (1)
+  m_TagString: TurnLeft
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &697750458
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697750457}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 1, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &697750459
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697750457}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!4 &697750460
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697750457}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 39.226097, y: -14.5, z: -13.84}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 792224160}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &701662997
 GameObject:
   m_ObjectHideFlags: 0
@@ -2786,6 +3045,7 @@ MonoBehaviour:
   attackSpeed: 3
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -2907,6 +3167,7 @@ MonoBehaviour:
   attackSpeed: 2
   rotateSpeed: 8
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -3028,6 +3289,7 @@ MonoBehaviour:
   attackSpeed: 3
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -3060,6 +3322,20 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1384396018}
+  - {fileID: 1228467451}
+  - {fileID: 1311530207}
+  - {fileID: 697750460}
+  - {fileID: 678886964}
+  - {fileID: 679863006}
+  - {fileID: 1239795475}
+  - {fileID: 2028941778}
+  - {fileID: 1000831619}
+  - {fileID: 980122973}
+  - {fileID: 1328534163}
+  - {fileID: 1118844783}
+  - {fileID: 1034390861}
+  - {fileID: 319604651}
+  - {fileID: 1873561544}
   m_Father: {fileID: 2109150604}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3392,6 +3668,7 @@ MonoBehaviour:
   attackSpeed: 3
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -3610,6 +3887,7 @@ MonoBehaviour:
   attackSpeed: 3
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -3828,9 +4106,72 @@ MonoBehaviour:
   attackSpeed: 4
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: a6f2ac887e3f7614a81ba80193741148, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
+--- !u!1 &980122970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 980122973}
+  - component: {fileID: 980122972}
+  - component: {fileID: 980122971}
+  m_Layer: 0
+  m_Name: TurnRIght (3)
+  m_TagString: TurnRight
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &980122971
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980122970}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &980122972
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980122970}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 1, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &980122973
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980122970}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 19.14, y: -14.5, z: -48.33146}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 792224160}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &996605693
 GameObject:
   m_ObjectHideFlags: 0
@@ -3920,6 +4261,68 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerPrefab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
+--- !u!1 &1000831616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1000831619}
+  - component: {fileID: 1000831618}
+  - component: {fileID: 1000831617}
+  m_Layer: 0
+  m_Name: TurnLeft (4)
+  m_TagString: TurnLeft
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1000831617
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000831616}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 1, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1000831618
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000831616}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!4 &1000831619
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000831616}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 19.726097, y: -14.5, z: -68.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 792224160}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1030092838
 GameObject:
   m_ObjectHideFlags: 0
@@ -4038,9 +4441,72 @@ MonoBehaviour:
   attackSpeed: 3
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
+--- !u!1 &1034390858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1034390861}
+  - component: {fileID: 1034390860}
+  - component: {fileID: 1034390859}
+  m_Layer: 0
+  m_Name: TurnLeft (6)
+  m_TagString: TurnLeft
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1034390859
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034390858}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 1, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1034390860
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034390858}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!4 &1034390861
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034390858}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 53.726097, y: -14.5, z: -68.36}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 792224160}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1035808773
 GameObject:
   m_ObjectHideFlags: 0
@@ -4159,9 +4625,72 @@ MonoBehaviour:
   attackSpeed: 2
   rotateSpeed: 8
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
+--- !u!1 &1118844780
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1118844783}
+  - component: {fileID: 1118844782}
+  - component: {fileID: 1118844781}
+  m_Layer: 0
+  m_Name: TurnLeft (5)
+  m_TagString: TurnLeft
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1118844781
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118844780}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 1, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1118844782
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118844780}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!4 &1118844783
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118844780}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 35.65, y: -14.5, z: -68.83146}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 792224160}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1159480978
 GameObject:
   m_ObjectHideFlags: 0
@@ -4360,6 +4889,7 @@ MonoBehaviour:
   attackSpeed: 3
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -4578,6 +5108,7 @@ MonoBehaviour:
   attackSpeed: 2
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: a6f2ac887e3f7614a81ba80193741148, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -4772,9 +5303,72 @@ MonoBehaviour:
   attackSpeed: 4
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: a6f2ac887e3f7614a81ba80193741148, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
+--- !u!1 &1228467448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1228467451}
+  - component: {fileID: 1228467450}
+  - component: {fileID: 1228467449}
+  m_Layer: 0
+  m_Name: TurnLeft
+  m_TagString: TurnLeft
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1228467449
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228467448}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 1, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1228467450
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228467448}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!4 &1228467451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228467448}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.226097, y: -14.5, z: -14.331457}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 792224160}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1231517082
 GameObject:
   m_ObjectHideFlags: 0
@@ -4893,9 +5487,72 @@ MonoBehaviour:
   attackSpeed: 2
   rotateSpeed: 8
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
+--- !u!1 &1239795472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1239795475}
+  - component: {fileID: 1239795474}
+  - component: {fileID: 1239795473}
+  m_Layer: 0
+  m_Name: TurnLeft (2)
+  m_TagString: TurnLeft
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1239795473
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239795472}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 1, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1239795474
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239795472}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!4 &1239795475
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239795472}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.273903, y: -14.5, z: -32.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 792224160}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1245416998
 GameObject:
   m_ObjectHideFlags: 0
@@ -5146,6 +5803,7 @@ MonoBehaviour:
   attackSpeed: 2
   rotateSpeed: 8
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -5364,6 +6022,7 @@ MonoBehaviour:
   attackSpeed: 4
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: a6f2ac887e3f7614a81ba80193741148, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -5485,6 +6144,7 @@ MonoBehaviour:
   attackSpeed: 2
   rotateSpeed: 8
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -5522,6 +6182,130 @@ Transform:
   - {fileID: 2068670410}
   m_Father: {fileID: 2109150604}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1311530204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1311530207}
+  - component: {fileID: 1311530206}
+  - component: {fileID: 1311530205}
+  m_Layer: 0
+  m_Name: TurnRIght
+  m_TagString: TurnRight
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &1311530205
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311530204}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1311530206
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311530204}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 1, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1311530207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311530204}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 37.9, y: -14.5, z: 11.668543}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 792224160}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1328534160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1328534163}
+  - component: {fileID: 1328534162}
+  - component: {fileID: 1328534161}
+  m_Layer: 0
+  m_Name: TurnRIght (4)
+  m_TagString: TurnRight
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &1328534161
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328534160}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1328534162
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328534160}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 1, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1328534163
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328534160}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 36.226097, y: -14.5, z: -48.95}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 792224160}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1342518108
 GameObject:
@@ -5721,7 +6505,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384396017}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 5.630001, y: -14.040001, z: 18.9}
+  m_LocalPosition: {x: 5.22, y: -14.83539, z: 27.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5902,6 +6686,7 @@ MonoBehaviour:
   attackSpeed: 2
   rotateSpeed: 8
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -6281,7 +7066,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1538832320}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -6454,6 +7239,7 @@ MonoBehaviour:
   attackSpeed: 2
   rotateSpeed: 8
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -6575,6 +7361,7 @@ MonoBehaviour:
   attackSpeed: 3
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -6890,6 +7677,7 @@ MonoBehaviour:
   attackSpeed: 3
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -7124,6 +7912,7 @@ MonoBehaviour:
   attackSpeed: 3
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -7245,6 +8034,7 @@ MonoBehaviour:
   attackSpeed: 2
   rotateSpeed: 8
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -7446,6 +8236,7 @@ MonoBehaviour:
   attackSpeed: 3
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -7567,6 +8358,7 @@ MonoBehaviour:
   attackSpeed: 2
   rotateSpeed: 8
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -7688,6 +8480,7 @@ MonoBehaviour:
   attackSpeed: 3
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -7809,9 +8602,72 @@ MonoBehaviour:
   attackSpeed: 4
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: a6f2ac887e3f7614a81ba80193741148, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
+--- !u!1 &1873561541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1873561544}
+  - component: {fileID: 1873561543}
+  - component: {fileID: 1873561542}
+  m_Layer: 0
+  m_Name: TurnRIght (6)
+  m_TagString: TurnRight
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &1873561542
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873561541}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1873561543
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873561541}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 1, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1873561544
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873561541}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 70.2261, y: -14.5, z: -49.06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 792224160}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1882175279
 GameObject:
   m_ObjectHideFlags: 0
@@ -8110,6 +8966,7 @@ MonoBehaviour:
   attackSpeed: 3
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -8231,6 +9088,7 @@ MonoBehaviour:
   attackSpeed: 3
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -8449,6 +9307,7 @@ MonoBehaviour:
   attackSpeed: 4
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: a6f2ac887e3f7614a81ba80193741148, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -8667,6 +9526,7 @@ MonoBehaviour:
   attackSpeed: 3
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -8788,6 +9648,7 @@ MonoBehaviour:
   attackSpeed: 3
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -8909,6 +9770,7 @@ MonoBehaviour:
   attackSpeed: 3
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -9009,6 +9871,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2022991409}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2028941775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2028941778}
+  - component: {fileID: 2028941777}
+  - component: {fileID: 2028941776}
+  m_Layer: 0
+  m_Name: TurnLeft (3)
+  m_TagString: TurnLeft
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &2028941776
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028941775}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 1, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &2028941777
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028941775}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!4 &2028941778
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028941775}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.5, y: -14.5, z: -68.83146}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 792224160}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2051839926
 GameObject:
   m_ObjectHideFlags: 0
@@ -9127,6 +10051,7 @@ MonoBehaviour:
   attackSpeed: 3
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -9345,6 +10270,7 @@ MonoBehaviour:
   attackSpeed: 3
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}
@@ -9830,6 +10756,7 @@ MonoBehaviour:
   attackSpeed: 3
   rotateSpeed: 10
   CloseTargets: 1
+  hasTower: 0
   TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
   CurrentTarget: {fileID: 0}
   player: {fileID: 0}

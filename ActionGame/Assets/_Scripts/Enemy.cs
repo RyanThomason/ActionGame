@@ -35,22 +35,22 @@ public class Enemy : MonoBehaviour
     //Reads where the gameObject is facing and moves toward that direction
     void Move() {
         //Debug.Log(transform.rotation.eulerAngles.y);
-        if(transform.rotation.eulerAngles.y == 0) { 
+        if(transform.rotation.eulerAngles.y == 270) { 
             Vector3 pos = transform.position;
             pos.x += speed * Time.deltaTime;
             transform.position = pos;
         }
-        if(transform.rotation.eulerAngles.y == 270) {
+        if(transform.rotation.eulerAngles.y == 180) {
             Vector3 pos = transform.position;
             pos.z += speed * Time.deltaTime;
             transform.position = pos;
         }   
-        if(transform.rotation.eulerAngles.y ==180) {
+        if(transform.rotation.eulerAngles.y == 90) {
             Vector3 pos = transform.position;
             pos.x -= speed * Time.deltaTime;
             transform.position = pos;
         } 
-        if(transform.rotation.eulerAngles.y == 90) {
+        if(transform.rotation.eulerAngles.y == 0) {
             Vector3 pos = transform.position;
             pos.z -= speed * Time.deltaTime;
             transform.position = pos;

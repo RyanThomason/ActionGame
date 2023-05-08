@@ -17,6 +17,7 @@ public class TowerBuilder : MonoBehaviour
             {
                 // Build the tower on the current plot
                 BuildTower();
+                //TowerManager.CreateTower();
                 isBuilding = false;
             }
             else

@@ -12,6 +12,7 @@ public class TowerManager : MonoBehaviour
     public float attackSpeed = 3f;
     public float rotateSpeed = 10f;
     public bool CloseTargets = true;
+    public bool hasTower = false;
 
     private float attackTimer = 0f;
     private Transform target;
@@ -24,6 +25,7 @@ public class TowerManager : MonoBehaviour
 
     public void CreateTower()
     {
+        hasTower = true;
         player.coins -= TowerCost;
     }
 
@@ -72,23 +74,25 @@ public class TowerManager : MonoBehaviour
 
     void Update()
     {
-        GetTarget();
-        if (TowerHealth < 0)
-        {
-            DestroyTower();
-        }
-        attackTimer += Time.deltaTime;
-        if (attackTimer >= attackSpeed) // determine if the amount of time has passed to attack again
-        {
-            CurrentTarget = GetTarget();
-            if (CurrentTarget != null)  // if the CurrentTarget is found; closest one possible, initiate attack sequence
+        if(hasTower == true) {
+            GetTarget();
+            if (TowerHealth < 0)
             {
-                RotateTowardsTarget();
-                if (Vector3.Distance(transform.position, CurrentTarget.transform.position) <= TowerRange)
-                    {
-                        CurrentTarget.GetComponent<Enemy>().OnBulletHit(TowerDamage);    // Through the script component of the Enemy GameObject, call TakeDamage
-                        attackTimer = 0f;   // reset timer
-                    }
+                DestroyTower();
+            }
+            attackTimer += Time.deltaTime;
+            if (attackTimer >= attackSpeed) // determine if the amount of time has passed to attack again
+            {
+                CurrentTarget = GetTarget();
+                if (CurrentTarget != null)  // if the CurrentTarget is found; closest one possible, initiate attack sequence
+                {
+                    RotateTowardsTarget();
+                    if (Vector3.Distance(transform.position, CurrentTarget.transform.position) <= TowerRange)
+                        {
+                            CurrentTarget.GetComponent<Enemy>().OnBulletHit(TowerDamage);    // Through the script component of the Enemy GameObject, call TakeDamage
+                            attackTimer = 0f;   // reset timer
+                        }
+                }
             }
         }
     }
