@@ -2412,7 +2412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
-  speed: 75
+  speed: 10
   player: {fileID: 0}
 --- !u!65 &7939057139357150273
 BoxCollider:

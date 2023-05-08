@@ -21,12 +21,22 @@ public class TowerManager : MonoBehaviour
     [Header("Objects")]
     public GameObject TowerPreFab;
     public GameObject CurrentTarget = null;
-    public PlayerController player;
+
+    [HideInInspector]
+    public static GameObject playerObject;
+    public PlayerController playerController;
+
+    void Start()
+    {
+        playerObject = GameObject.FindWithTag("Player");
+        playerController = playerObject.GetComponent<PlayerController>();
+    }
 
     public void CreateTower()
     {
         hasTower = true;
-        player.coins -= TowerCost;
+        print(playerController);
+        playerController.coins -= TowerCost;
     }
 
 
