@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+
     public int damage = 3;
     public float life = 3f;
-    
     // Update is called once per frame
     void Awake()
     {
