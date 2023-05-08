@@ -10,8 +10,6 @@ public class Enemy : MonoBehaviour
 
     //When an enemy is hit, set health to health minus damage, and check if health is 0 or less. If health is 0 or less, destroy the object   
     public void OnBulletHit(int damage) {
-        Debug.Log(health);
-        Debug.Log("Hit");
         health = health - damage;
         if(health <= 0) {
             Destroy(gameObject);

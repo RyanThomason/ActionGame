@@ -27,8 +27,7 @@ public class BaseTower : MonoBehaviour
         }
         Destroy(collGO);
         if(health <= 0) {
-            Destroy(gameObject);
+            //Change Scenes
         }
-        Debug.Log(health);
     }
 }
