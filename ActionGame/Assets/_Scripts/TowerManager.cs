@@ -36,7 +36,7 @@ public class TowerManager : MonoBehaviour
         }
 
         GameObject target = possibleTargets[0]; // Grab the first element of the possibleTargets array as it is presumably the earliest and closest
-        float targetDist = Vector3.Distance(TowerPreFab.transform.position, nearestTarget.transform.position);
+        float targetDist = Vector3.Distance(TowerPreFab.transform.position, target.transform.position);
         
         foreach (GameObject possibleTarget in possibleTargets)
         {
@@ -44,9 +44,9 @@ public class TowerManager : MonoBehaviour
 
             if (targetFarthestEnemies == true)
             {
-                if (distanceFromTower > farthestDistance)
+                if (distanceFromTower > targetDist)
                 {
-                    farthestDistance = distanceFromTower;   // Replace the targetDist
+                    targetDist = distanceFromTower;   // Replace the targetDist
                     target = possibleTarget;
                 }
             }
