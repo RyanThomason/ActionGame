@@ -17,6 +17,7 @@ public class TowerBuilder : MonoBehaviour
             {
                 // Build the tower on the current plot
                 BuildTower();
+                //TowerManager.CreateTower();
                 isBuilding = false;
             }
             else
@@ -31,6 +32,7 @@ public class TowerBuilder : MonoBehaviour
     {
         if (other.CompareTag("Plot"))
         {
+            Debug.Log("inside plot");
             currentPlot = other.gameObject;
         }
     }
@@ -46,6 +48,8 @@ public class TowerBuilder : MonoBehaviour
 
     void BuildTower()   // Creates the tower
     {
+        towerPrefab = currentPlot.GetComponent<TowerManager>().TowerPreFab;   // grabs the prefab from the plot for instantiation
         GameObject newTower = Instantiate(towerPrefab, currentPlot.transform.position, Quaternion.identity);
+        currentPlot.GetComponent<TowerManager>().CreateTower();    // Through the script component of the Enemy GameObject, set tower active    }
     }
 }
