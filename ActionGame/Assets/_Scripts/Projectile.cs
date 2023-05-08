@@ -14,6 +14,11 @@ public class Projectile : MonoBehaviour
             Enemy enemy = go.GetComponent<Enemy>();
             enemy.OnBulletHit(damage);
         }
+
+        if(go.tag == "LargeEnemy") {
+            LargeEnemy largeEnemy = go.GetComponent<LargeEnemy>();
+            largeEnemy.OnBulletHit(damage);
+        }
         Destroy(gameObject);
     }
 }

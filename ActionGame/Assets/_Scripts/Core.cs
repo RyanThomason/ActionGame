@@ -9,10 +9,10 @@ public class Core : MonoBehaviour
 
     public Text coreHealthTxt;
 
-
     void Update() {
         coreHealthTxt.text = "Core Health:" + coreHealth.ToString();
     }
+    
     //when an enemy walks into the core it will deal one damage to it
     void OnTriggerEnter(Collider coll) {
         if(coll.gameObject.CompareTag("Enemy")) {
