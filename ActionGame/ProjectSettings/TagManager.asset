@@ -9,6 +9,7 @@ TagManager:
   - TurnLeft
   - TurnRight
   - Plot
+  - Button
   layers:
   - Default
   - TransparentFX

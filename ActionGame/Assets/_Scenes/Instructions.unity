@@ -598,9 +598,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Once you spawn in you can place your towers and then begin the first wave.
-    There are a total of 5 waves. \n\nControls:\nW, A, S, D - Move\nLeft Mouse -
-    Shoot\nE - Place Towers"
+  m_text: 'Once you spawn in you can place your towers and then begin the first wave.
+    There are a total of 5 waves. Shoot the red sphere to start next wave.
+
+
+    Controls:
+
+    W,
+    A, S, D - Move
+
+    Left Mouse - Shoot
+
+    E - Place Towers'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

@@ -10,7 +10,7 @@ public class Gun : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletSpeed = 300f;
     public Transform MainCamera;
-
+    public AudioSource audioSource;
 
     //variables for overheating mechanic
     public float overheatThreshold = 100f; //Max heat level
@@ -65,6 +65,7 @@ public class Gun : MonoBehaviour
             Rigidbody bulletRB = bullet.GetComponent<Rigidbody>();
             bulletRB.AddForce(BulletSpawnPoint.forward * bulletSpeed, ForceMode.Impulse);
             Debug.Log(currentHeatLevel);
+            audioSource.Play(0);
 
             //if the heat level goes above the threshold it sets it to overheated and starts the timer.
             if (currentHeatLevel >= overheatThreshold) {

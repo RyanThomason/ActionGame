@@ -28,4 +28,14 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    void OnTriggerEnter (Collider coll) {
+        GameObject go = coll.gameObject;
+        Debug.Log("Trigger");
+        if (go.gameObject.CompareTag("Button")) {
+            Debug.Log("Trigger");
+            EnemySpawner spawner = go.GetComponent<EnemySpawner>();
+            spawner.OnClick();
+        }
+    }
 }

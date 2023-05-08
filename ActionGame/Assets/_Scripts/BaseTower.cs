@@ -26,7 +26,7 @@ public class BaseTower : MonoBehaviour
         }
         Destroy(collGO);
         if(health <= 0) {
-            //Change Scenes
+            SceneManager.LoadScene("Game Over");
         }
     }
 }

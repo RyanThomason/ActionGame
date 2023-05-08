@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -65,6 +66,9 @@ public class EnemySpawner : MonoBehaviour
                 yield return new WaitForSeconds(1);
                 Invoke(nameof(SpawnEnemy), 1f/enemySpawnPerSecond);
             }
+        }
+        if(waveCount >= 6) {
+            SceneManager.LoadScene("Congratulations");
         }
         yield return new WaitForSeconds(0);
     }
