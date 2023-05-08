@@ -914,7 +914,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 176.40863, y: 22.468903}
+  m_AnchoredPosition: {x: 176.40863, y: 22.468872}
   m_SizeDelta: {x: 352.8174, y: 44.9377}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &276954176
@@ -2915,7 +2915,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 853288379}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b37b2b60e35336142a529a3275e03c69, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ed86d1806d4bb84b9039d948810550a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 150
@@ -3419,6 +3419,7 @@ GameObject:
   - component: {fileID: 996605695}
   - component: {fileID: 996605694}
   - component: {fileID: 996605696}
+  - component: {fileID: 996605697}
   m_Layer: 0
   m_Name: FirstPersonPlayer
   m_TagString: Player
@@ -3474,13 +3475,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 996605694}
-  gravity: -9.81
+  gravity: -6.81
   groundCheck: {fileID: 845777275}
   groundDistance: 0.2
   groundMask:
     serializedVersion: 2
     m_Bits: 0
   speed: 15
+  coins: 0
+  coinTxt: {fileID: 1735215573}
+--- !u!114 &996605697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996605693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4b99cb9879765344b83b8a02205abe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towerPrefab: {fileID: 0}
 --- !u!1 &1030092838
 GameObject:
   m_ObjectHideFlags: 0
@@ -4952,54 +4968,6 @@ Transform:
   - {fileID: 285329033}
   m_Father: {fileID: 2109150604}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1346127029
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1346127031}
-  - component: {fileID: 1346127030}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1346127030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1346127029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5eea1750cdc87045ba72c86bc3f3b15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wave: 1
-  coins: 0
-  waveTxt: {fileID: 1159480982}
-  coinTxt: {fileID: 1735215573}
---- !u!4 &1346127031
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1346127029}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 765.3448, y: 567.1385, z: -57.2682}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1359797957
 GameObject:
