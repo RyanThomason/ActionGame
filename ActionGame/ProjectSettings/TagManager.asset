@@ -8,6 +8,7 @@ TagManager:
   - LargeEnemy
   - TurnLeft
   - TurnRight
+  - Plot
   layers:
   - Default
   - TransparentFX

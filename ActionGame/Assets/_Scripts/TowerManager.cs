@@ -5,11 +5,13 @@ using UnityEngine;
 public class TowerManager : MonoBehaviour
 {
     [Header("Properties")]
+    public int TowerCost;
     public float TowerHealth;
     public float TowerRange = 5f;
-    public float TowerDamage = 10f;
+    public int TowerDamage = 10;
     public float attackSpeed = 3f;
     public float rotateSpeed = 10f;
+    public bool CloseTargets = true;
 
     private float attackTimer = 0f;
     private Transform target;
@@ -18,13 +20,20 @@ public class TowerManager : MonoBehaviour
     [Header("Objects")]
     public GameObject TowerPreFab;
     public GameObject CurrentTarget = null;
+    public PlayerController player;
 
-    private void DestroyTower()
+    public void CreateTower()
+    {
+        player.coins -= TowerCost;
+    }
+
+
+    void DestroyTower()
     {
 
     }
 
-    private GameObject GetNearestTarget()
+    private GameObject GetTarget()
     {
         GameObject[] possibleTargets = GameObject.FindGameObjectsWithTag("Enemy");
 
@@ -33,26 +42,37 @@ public class TowerManager : MonoBehaviour
             return null;
         }
 
-        GameObject nearestTarget = possibleTargets[0]; // Grab the first element of the possibleTargets array as it is presumably the earliest and closest
-        float shortestTargetDist = Vector3.Distance(TowerPreFab.transform.position, nearestTarget.transform.position);
+        GameObject target = possibleTargets[0]; // Grab the first element of the possibleTargets array as it is the earliest
+        float targetDist = Vector3.Distance(TowerPreFab.transform.position, target.transform.position);
         
         foreach (GameObject possibleTarget in possibleTargets)
         {
             float distanceFromTower = Vector3.Distance(TowerPreFab.transform.position, possibleTarget.transform.position);
-
-            if (distanceFromTower < shortestTargetDist)
-            {  
-                shortestTargetDist = distanceFromTower; // Replace the shortestTargetDist
-                nearestTarget = possibleTarget;
+            if (CloseTargets == true)
+            {
+                if (distanceFromTower < targetDist)
+                {  
+                    targetDist = distanceFromTower; // Replace the targetDist
+                    target = possibleTarget;
+                }
             }
+            else
+            {
+                if (distanceFromTower > targetDist)
+                {  
+                    targetDist = distanceFromTower; // Replace the targetDist
+                    target = possibleTarget;
+                }
+            }
+            
         }
 
-        return nearestTarget;
+        return target;
     }
 
     void Update()
     {
-        GetNearestTarget();
+        GetTarget();
         if (TowerHealth < 0)
         {
             DestroyTower();
@@ -60,13 +80,13 @@ public class TowerManager : MonoBehaviour
         attackTimer += Time.deltaTime;
         if (attackTimer >= attackSpeed) // determine if the amount of time has passed to attack again
         {
-            CurrentTarget = GetNearestTarget();
+            CurrentTarget = GetTarget();
             if (CurrentTarget != null)  // if the CurrentTarget is found; closest one possible, initiate attack sequence
             {
                 RotateTowardsTarget();
                 if (Vector3.Distance(transform.position, CurrentTarget.transform.position) <= TowerRange)
                     {
-                        CurrentTarget.GetComponent<EnemyScript>().TakeDamage(TowerDamage);    // Through the script component of the Enemy GameObject, call TakeDamage
+                        CurrentTarget.GetComponent<Enemy>().OnBulletHit(TowerDamage);    // Through the script component of the Enemy GameObject, call TakeDamage
                         attackTimer = 0f;   // reset timer
                     }
             }

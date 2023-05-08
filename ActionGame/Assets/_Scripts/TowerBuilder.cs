@@ -31,6 +31,7 @@ public class TowerBuilder : MonoBehaviour
     {
         if (other.CompareTag("Plot"))
         {
+            Debug.Log("inside plot");
             currentPlot = other.gameObject;
         }
     }

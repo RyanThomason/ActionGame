@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float damage = 3f;
-    public float life = 3f;
 
-    public GameManager GameManager;
+    public int damage = 3;
+    public float life = 3f;
     // Update is called once per frame
     void Awake()
     {
@@ -16,8 +15,12 @@ public class Bullet : MonoBehaviour
 
     void OnCollisionEnter (Collision coll) {
         //If it is an enemy deal damage and destroy bullet
-        if (coll.gameObject.CompareTag("Enemy")) {
-            Debug.Log("Test");
+        GameObject go = coll.gameObject;
+        if (go.gameObject.CompareTag("Enemy")) {
+            if(go.tag == "Enemy") {
+            Enemy enemy = go.GetComponent<Enemy>();
+            enemy.OnBulletHit(damage);
+        }
 
         }
         //if anything else just destroy it
