@@ -45,7 +45,9 @@ public class TowerBuilder : MonoBehaviour
     }
 
     void BuildTower()   // Creates the tower
-    {
+    {   
+        towerPrefab = currentPlot.GetComponent<TowerManager>().TowerPreFab;   // grabs the prefab from the plot for instantiation
         GameObject newTower = Instantiate(towerPrefab, currentPlot.transform.position, Quaternion.identity);
+        newTower.GetComponent<TowerManager>().CreateTower();    // Through the script component of the Enemy GameObject, call TakeDamage
     }
 }

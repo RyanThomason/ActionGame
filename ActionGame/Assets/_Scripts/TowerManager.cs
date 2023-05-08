@@ -12,6 +12,7 @@ public class TowerManager : MonoBehaviour
     public float attackSpeed = 3f;
     public float rotateSpeed = 10f;
     public bool targetFarthestEnemies = false;
+    public bool towerActive = false;
 
     private float attackTimer = 0f;
     private Transform target;
@@ -21,9 +22,14 @@ public class TowerManager : MonoBehaviour
     public GameObject TowerPreFab;
     public GameObject CurrentTarget = null;
 
-    private void DestroyTower()
+    public void CreateTower()
     {
+        towerActive = true;
+    }
 
+    public void DestroyTower()
+    {
+        
     }
 
     private GameObject GetTarget()
@@ -65,23 +71,26 @@ public class TowerManager : MonoBehaviour
 
     void Update()
     {
-        GetTarget();
-        if (TowerHealth < 0)
+        if (towerActive == true)
         {
-            DestroyTower();
-        }
-        attackTimer += Time.deltaTime;
-        if (attackTimer >= attackSpeed) // determine if the amount of time has passed to attack again
-        {
-            CurrentTarget = GetTarget();
-            if (CurrentTarget != null)  // if the CurrentTarget is found; closest one possible, initiate attack sequence
+            GetTarget();
+            if (TowerHealth < 0)
             {
-                RotateTowardsTarget();
-                if (Vector3.Distance(transform.position, CurrentTarget.transform.position) <= TowerRange)
-                    {
-                        CurrentTarget.GetComponent<EnemyScript>().TakeDamage(TowerDamage);    // Through the script component of the Enemy GameObject, call TakeDamage
-                        attackTimer = 0f;   // reset timer
-                    }
+                DestroyTower();
+            }
+            attackTimer += Time.deltaTime;
+            if (attackTimer >= attackSpeed) // determine if the amount of time has passed to attack again
+            {
+                CurrentTarget = GetTarget();
+                if (CurrentTarget != null)  // if the CurrentTarget is found; closest one possible, initiate attack sequence
+                {
+                    RotateTowardsTarget();
+                    if (Vector3.Distance(transform.position, CurrentTarget.transform.position) <= TowerRange)
+                        {
+                            CurrentTarget.GetComponent<EnemyScript>().TakeDamage(TowerDamage);    // Through the script component of the Enemy GameObject, call TakeDamage
+                            attackTimer = 0f;   // reset timer
+                        }
+                }
             }
         }
     }
