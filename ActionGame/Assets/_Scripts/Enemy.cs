@@ -31,7 +31,6 @@ public class Enemy : MonoBehaviour
 
     //Reads where the gameObject is facing and moves toward that direction
     void Move() {
-        Debug.Log(transform.rotation.eulerAngles.y);
         if(transform.rotation.eulerAngles.y == 0) { 
             Vector3 pos = transform.position;
             pos.x += speed * Time.deltaTime;
