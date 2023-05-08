@@ -6,7 +6,7 @@ public class EnemySpawner : MonoBehaviour
 {
     //Most code replicated from Space Shmup
     [Header("Inscribed")]
-    public GameObject[] prefabEnemies;
+    public GameObject prefabEnemy;
     public float enemySpawnPerSecond = 1f;
     public int waveCount = 0;
     public int waveMax = 5;
@@ -60,8 +60,7 @@ public class EnemySpawner : MonoBehaviour
     //Spawn enemies on the enemySpawner position
     public void SpawnEnemy() {
         Vector3 pos = transform.position;
-        int ndx = Random.Range(0,prefabEnemies.Length);
-        GameObject go = Instantiate<GameObject>(prefabEnemies[ndx]);
+        GameObject go = Instantiate<GameObject>(prefabEnemy);
         go.transform.position = pos;
     }
 }

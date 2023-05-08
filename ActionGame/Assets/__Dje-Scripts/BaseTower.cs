@@ -22,9 +22,6 @@ public class BaseTower : MonoBehaviour
         if(collGO.tag == "Enemy") {
             health = health - 35;
         }
-        if(collGO.tag == "LargeEnemy") {
-            health = health - 50;
-        }
         Destroy(collGO);
         if(health <= 0) {
             //Change Scenes
