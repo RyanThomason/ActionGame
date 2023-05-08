@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - LargeEnemy
+  - TurnLeft
+  - TurnRight
   layers:
   - Default
   - TransparentFX
