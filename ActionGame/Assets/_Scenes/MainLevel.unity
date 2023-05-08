@@ -300,9 +300,10 @@ GameObject:
   - component: {fileID: 75664739}
   - component: {fileID: 75664738}
   - component: {fileID: 75664737}
+  - component: {fileID: 75664740}
   m_Layer: 0
   m_Name: TowerSlab (35)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -386,6 +387,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75664735}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &75664740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75664735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 100
+  TowerHealth: 50
+  TowerRange: 8
+  TowerDamage: 2
+  attackSpeed: 3
+  rotateSpeed: 10
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &112324039
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,9 +420,10 @@ GameObject:
   - component: {fileID: 112324043}
   - component: {fileID: 112324042}
   - component: {fileID: 112324041}
+  - component: {fileID: 112324044}
   m_Layer: 0
   m_Name: TowerSlab (57)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -484,6 +507,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112324039}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &112324044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112324039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 100
+  TowerHealth: 50
+  TowerRange: 8
+  TowerDamage: 2
+  attackSpeed: 3
+  rotateSpeed: 10
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &130100184
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,9 +637,10 @@ GameObject:
   - component: {fileID: 144691830}
   - component: {fileID: 144691829}
   - component: {fileID: 144691828}
+  - component: {fileID: 144691831}
   m_Layer: 0
   m_Name: TowerSlab (8)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -679,6 +724,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 144691826}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &144691831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144691826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 100
+  TowerHealth: 50
+  TowerRange: 8
+  TowerDamage: 2
+  attackSpeed: 3
+  rotateSpeed: 10
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!4 &155002089 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3832703582600944452, guid: bceefb2a39f6db74d9bc9d006687b7f1, type: 3}
@@ -793,9 +859,10 @@ GameObject:
   - component: {fileID: 203389238}
   - component: {fileID: 203389237}
   - component: {fileID: 203389236}
+  - component: {fileID: 203389239}
   m_Layer: 0
   m_Name: TowerSlab
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -879,6 +946,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 203389234}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &203389239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203389234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 200
+  TowerHealth: 75
+  TowerRange: 10
+  TowerDamage: 4
+  attackSpeed: 2
+  rotateSpeed: 8
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &276954174
 GameObject:
   m_ObjectHideFlags: 0
@@ -914,7 +1002,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 176.40863, y: 22.468903}
+  m_AnchoredPosition: {x: 176.40863, y: 22.468872}
   m_SizeDelta: {x: 352.8174, y: 44.9377}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &276954176
@@ -971,9 +1059,10 @@ GameObject:
   - component: {fileID: 285329036}
   - component: {fileID: 285329035}
   - component: {fileID: 285329034}
+  - component: {fileID: 285329037}
   m_Layer: 0
   m_Name: TowerSlab (43)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1057,6 +1146,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 285329032}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &285329037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285329032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 200
+  TowerHealth: 75
+  TowerRange: 10
+  TowerDamage: 4
+  attackSpeed: 2
+  rotateSpeed: 8
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &297005194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1069,9 +1179,10 @@ GameObject:
   - component: {fileID: 297005198}
   - component: {fileID: 297005197}
   - component: {fileID: 297005196}
+  - component: {fileID: 297005199}
   m_Layer: 0
   m_Name: TowerSlab (23)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1155,6 +1266,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 297005194}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &297005199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297005194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 200
+  TowerHealth: 75
+  TowerRange: 10
+  TowerDamage: 4
+  attackSpeed: 2
+  rotateSpeed: 8
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &376814994
 GameObject:
   m_ObjectHideFlags: 0
@@ -1264,9 +1396,10 @@ GameObject:
   - component: {fileID: 439317262}
   - component: {fileID: 439317261}
   - component: {fileID: 439317260}
+  - component: {fileID: 439317263}
   m_Layer: 0
   m_Name: TowerSlab (47)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1350,6 +1483,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439317258}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &439317263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439317258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 100
+  TowerHealth: 50
+  TowerRange: 8
+  TowerDamage: 2
+  attackSpeed: 3
+  rotateSpeed: 10
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &450985124
 GameObject:
   m_ObjectHideFlags: 0
@@ -1462,9 +1616,10 @@ GameObject:
   - component: {fileID: 491014869}
   - component: {fileID: 491014868}
   - component: {fileID: 491014867}
+  - component: {fileID: 491014870}
   m_Layer: 0
   m_Name: TowerSlab (27)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1548,6 +1703,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491014865}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &491014870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491014865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 100
+  TowerHealth: 50
+  TowerRange: 8
+  TowerDamage: 2
+  attackSpeed: 3
+  rotateSpeed: 10
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &492363405
 GameObject:
   m_ObjectHideFlags: 0
@@ -1560,9 +1736,10 @@ GameObject:
   - component: {fileID: 492363409}
   - component: {fileID: 492363408}
   - component: {fileID: 492363407}
+  - component: {fileID: 492363410}
   m_Layer: 0
   m_Name: TowerSlab (64)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1646,6 +1823,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492363405}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &492363410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492363405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 100
+  TowerHealth: 50
+  TowerRange: 8
+  TowerDamage: 2
+  attackSpeed: 3
+  rotateSpeed: 10
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &492781921
 GameObject:
   m_ObjectHideFlags: 0
@@ -2134,9 +2332,10 @@ GameObject:
   - component: {fileID: 605153721}
   - component: {fileID: 605153720}
   - component: {fileID: 605153719}
+  - component: {fileID: 605153722}
   m_Layer: 0
   m_Name: TowerSlab (84)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2220,6 +2419,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605153717}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &605153722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605153717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 100
+  TowerHealth: 50
+  TowerRange: 8
+  TowerDamage: 2
+  attackSpeed: 3
+  rotateSpeed: 10
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &675193635
 GameObject:
   m_ObjectHideFlags: 0
@@ -2329,9 +2549,10 @@ GameObject:
   - component: {fileID: 683153328}
   - component: {fileID: 683153327}
   - component: {fileID: 683153326}
+  - component: {fileID: 683153329}
   m_Layer: 0
   m_Name: TowerSlab (2)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2415,6 +2636,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 683153324}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &683153329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683153324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 200
+  TowerHealth: 75
+  TowerRange: 10
+  TowerDamage: 4
+  attackSpeed: 2
+  rotateSpeed: 8
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &701662997
 GameObject:
   m_ObjectHideFlags: 0
@@ -2427,9 +2669,10 @@ GameObject:
   - component: {fileID: 701663001}
   - component: {fileID: 701663000}
   - component: {fileID: 701662999}
+  - component: {fileID: 701663002}
   m_Layer: 0
   m_Name: TowerSlab (6)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2513,6 +2756,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701662997}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &701663002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701662997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 200
+  TowerHealth: 75
+  TowerRange: 10
+  TowerDamage: 4
+  attackSpeed: 2
+  rotateSpeed: 8
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &782120266
 GameObject:
   m_ObjectHideFlags: 0
@@ -2525,9 +2789,10 @@ GameObject:
   - component: {fileID: 782120270}
   - component: {fileID: 782120269}
   - component: {fileID: 782120268}
+  - component: {fileID: 782120271}
   m_Layer: 0
   m_Name: TowerSlab (24)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2611,6 +2876,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 782120266}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &782120271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782120266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 100
+  TowerHealth: 50
+  TowerRange: 8
+  TowerDamage: 2
+  attackSpeed: 3
+  rotateSpeed: 10
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &789273436
 GameObject:
   m_ObjectHideFlags: 0
@@ -2623,9 +2909,10 @@ GameObject:
   - component: {fileID: 789273440}
   - component: {fileID: 789273439}
   - component: {fileID: 789273438}
+  - component: {fileID: 789273441}
   m_Layer: 0
   m_Name: TowerSlab (10)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2709,6 +2996,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 789273436}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &789273441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789273436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 450
+  TowerHealth: 100
+  TowerRange: 15
+  TowerDamage: 8
+  attackSpeed: 2
+  rotateSpeed: 5
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: a6f2ac887e3f7614a81ba80193741148, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &845777271
 GameObject:
   m_ObjectHideFlags: 0
@@ -2932,9 +3240,10 @@ GameObject:
   - component: {fileID: 880206220}
   - component: {fileID: 880206219}
   - component: {fileID: 880206218}
+  - component: {fileID: 880206221}
   m_Layer: 0
   m_Name: TowerSlab (58)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3018,6 +3327,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 880206216}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &880206221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880206216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 200
+  TowerHealth: 75
+  TowerRange: 10
+  TowerDamage: 4
+  attackSpeed: 2
+  rotateSpeed: 8
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &884373860
 GameObject:
   m_ObjectHideFlags: 0
@@ -3127,9 +3457,10 @@ GameObject:
   - component: {fileID: 892304518}
   - component: {fileID: 892304517}
   - component: {fileID: 892304516}
+  - component: {fileID: 892304519}
   m_Layer: 0
   m_Name: TowerSlab (54)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3213,6 +3544,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892304514}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &892304519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892304514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 200
+  TowerHealth: 75
+  TowerRange: 10
+  TowerDamage: 4
+  attackSpeed: 2
+  rotateSpeed: 8
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &914545386
 GameObject:
   m_ObjectHideFlags: 0
@@ -3322,9 +3674,10 @@ GameObject:
   - component: {fileID: 972880377}
   - component: {fileID: 972880376}
   - component: {fileID: 972880375}
+  - component: {fileID: 972880378}
   m_Layer: 0
   m_Name: TowerSlab (42)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3408,6 +3761,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972880373}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &972880378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972880373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 100
+  TowerHealth: 50
+  TowerRange: 8
+  TowerDamage: 2
+  attackSpeed: 3
+  rotateSpeed: 10
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &996605693
 GameObject:
   m_ObjectHideFlags: 0
@@ -3493,9 +3867,10 @@ GameObject:
   - component: {fileID: 1030092842}
   - component: {fileID: 1030092841}
   - component: {fileID: 1030092840}
+  - component: {fileID: 1030092843}
   m_Layer: 0
   m_Name: TowerSlab (14)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3579,6 +3954,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1030092838}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1030092843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030092838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 100
+  TowerHealth: 50
+  TowerRange: 8
+  TowerDamage: 2
+  attackSpeed: 3
+  rotateSpeed: 10
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &1035808773
 GameObject:
   m_ObjectHideFlags: 0
@@ -3591,9 +3987,10 @@ GameObject:
   - component: {fileID: 1035808777}
   - component: {fileID: 1035808776}
   - component: {fileID: 1035808775}
+  - component: {fileID: 1035808778}
   m_Layer: 0
   m_Name: TowerSlab (11)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3677,6 +4074,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035808773}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1035808778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035808773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 100
+  TowerHealth: 50
+  TowerRange: 8
+  TowerDamage: 2
+  attackSpeed: 3
+  rotateSpeed: 10
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &1159480978
 GameObject:
   m_ObjectHideFlags: 0
@@ -3769,9 +4187,10 @@ GameObject:
   - component: {fileID: 1177577702}
   - component: {fileID: 1177577701}
   - component: {fileID: 1177577700}
+  - component: {fileID: 1177577703}
   m_Layer: 0
   m_Name: TowerSlab (60)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3855,6 +4274,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177577698}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1177577703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177577698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 450
+  TowerHealth: 100
+  TowerRange: 15
+  TowerDamage: 8
+  attackSpeed: 2
+  rotateSpeed: 5
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: a6f2ac887e3f7614a81ba80193741148, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &1181001310
 GameObject:
   m_ObjectHideFlags: 0
@@ -3964,9 +4404,10 @@ GameObject:
   - component: {fileID: 1195745683}
   - component: {fileID: 1195745682}
   - component: {fileID: 1195745681}
+  - component: {fileID: 1195745684}
   m_Layer: 0
   m_Name: TowerSlab (82)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4050,6 +4491,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1195745679}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1195745684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195745679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 200
+  TowerHealth: 75
+  TowerRange: 10
+  TowerDamage: 4
+  attackSpeed: 2
+  rotateSpeed: 8
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &1205396553
 GameObject:
   m_ObjectHideFlags: 0
@@ -4135,9 +4597,10 @@ GameObject:
   - component: {fileID: 1222820116}
   - component: {fileID: 1222820115}
   - component: {fileID: 1222820114}
+  - component: {fileID: 1222820117}
   m_Layer: 0
   m_Name: TowerSlab (15)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4221,6 +4684,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222820112}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1222820117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222820112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 450
+  TowerHealth: 100
+  TowerRange: 15
+  TowerDamage: 8
+  attackSpeed: 2
+  rotateSpeed: 5
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: a6f2ac887e3f7614a81ba80193741148, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &1231517082
 GameObject:
   m_ObjectHideFlags: 0
@@ -4233,9 +4717,10 @@ GameObject:
   - component: {fileID: 1231517086}
   - component: {fileID: 1231517085}
   - component: {fileID: 1231517084}
+  - component: {fileID: 1231517087}
   m_Layer: 0
   m_Name: TowerSlab (29)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4319,6 +4804,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231517082}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1231517087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231517082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 100
+  TowerHealth: 50
+  TowerRange: 8
+  TowerDamage: 2
+  attackSpeed: 3
+  rotateSpeed: 10
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &1245416998
 GameObject:
   m_ObjectHideFlags: 0
@@ -4463,9 +4969,10 @@ GameObject:
   - component: {fileID: 1265911433}
   - component: {fileID: 1265911432}
   - component: {fileID: 1265911431}
+  - component: {fileID: 1265911434}
   m_Layer: 0
   m_Name: TowerSlab (79)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4549,6 +5056,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1265911429}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1265911434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265911429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 200
+  TowerHealth: 75
+  TowerRange: 10
+  TowerDamage: 4
+  attackSpeed: 2
+  rotateSpeed: 8
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &1285840177
 GameObject:
   m_ObjectHideFlags: 0
@@ -4658,9 +5186,10 @@ GameObject:
   - component: {fileID: 1300787330}
   - component: {fileID: 1300787329}
   - component: {fileID: 1300787328}
+  - component: {fileID: 1300787331}
   m_Layer: 0
   m_Name: TowerSlab (48)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4744,6 +5273,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1300787326}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1300787331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300787326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 100
+  TowerHealth: 50
+  TowerRange: 8
+  TowerDamage: 2
+  attackSpeed: 3
+  rotateSpeed: 10
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &1303183850
 GameObject:
   m_ObjectHideFlags: 0
@@ -4756,9 +5306,10 @@ GameObject:
   - component: {fileID: 1303183854}
   - component: {fileID: 1303183853}
   - component: {fileID: 1303183852}
+  - component: {fileID: 1303183855}
   m_Layer: 0
   m_Name: TowerSlab (17)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4842,6 +5393,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1303183850}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1303183855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303183850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 450
+  TowerHealth: 100
+  TowerRange: 15
+  TowerDamage: 8
+  attackSpeed: 2
+  rotateSpeed: 5
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: a6f2ac887e3f7614a81ba80193741148, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &1310563304
 GameObject:
   m_ObjectHideFlags: 0
@@ -5147,9 +5719,10 @@ GameObject:
   - component: {fileID: 1446446037}
   - component: {fileID: 1446446036}
   - component: {fileID: 1446446035}
+  - component: {fileID: 1446446038}
   m_Layer: 0
   m_Name: TowerSlab (51)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5233,6 +5806,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446446033}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1446446038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446446033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 200
+  TowerHealth: 75
+  TowerRange: 10
+  TowerDamage: 4
+  attackSpeed: 2
+  rotateSpeed: 8
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &1459019993
 GameObject:
   m_ObjectHideFlags: 0
@@ -5676,9 +6270,10 @@ GameObject:
   - component: {fileID: 1541977071}
   - component: {fileID: 1541977070}
   - component: {fileID: 1541977069}
+  - component: {fileID: 1541977072}
   m_Layer: 0
   m_Name: TowerSlab (12)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5762,6 +6357,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1541977067}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1541977072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541977067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 100
+  TowerHealth: 50
+  TowerRange: 8
+  TowerDamage: 2
+  attackSpeed: 3
+  rotateSpeed: 10
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &1551300220
 GameObject:
   m_ObjectHideFlags: 0
@@ -5774,9 +6390,10 @@ GameObject:
   - component: {fileID: 1551300224}
   - component: {fileID: 1551300223}
   - component: {fileID: 1551300222}
+  - component: {fileID: 1551300225}
   m_Layer: 0
   m_Name: TowerSlab (7)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5860,6 +6477,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1551300220}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1551300225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551300220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 100
+  TowerHealth: 50
+  TowerRange: 8
+  TowerDamage: 2
+  attackSpeed: 3
+  rotateSpeed: 10
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &1573894553
 GameObject:
   m_ObjectHideFlags: 0
@@ -6066,9 +6704,10 @@ GameObject:
   - component: {fileID: 1608581699}
   - component: {fileID: 1608581698}
   - component: {fileID: 1608581697}
+  - component: {fileID: 1608581700}
   m_Layer: 0
   m_Name: TowerSlab (53)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6152,6 +6791,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1608581695}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1608581700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608581695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 100
+  TowerHealth: 50
+  TowerRange: 8
+  TowerDamage: 2
+  attackSpeed: 3
+  rotateSpeed: 10
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &1628816980 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3832703582600972128, guid: bceefb2a39f6db74d9bc9d006687b7f1, type: 3}
@@ -6277,9 +6937,10 @@ GameObject:
   - component: {fileID: 1700406366}
   - component: {fileID: 1700406365}
   - component: {fileID: 1700406364}
+  - component: {fileID: 1700406367}
   m_Layer: 0
   m_Name: TowerSlab (22)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6363,6 +7024,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700406362}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1700406367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700406362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 450
+  TowerHealth: 100
+  TowerRange: 15
+  TowerDamage: 8
+  attackSpeed: 2
+  rotateSpeed: 5
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: a6f2ac887e3f7614a81ba80193741148, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &1724857473
 GameObject:
   m_ObjectHideFlags: 0
@@ -6375,9 +7057,10 @@ GameObject:
   - component: {fileID: 1724857477}
   - component: {fileID: 1724857476}
   - component: {fileID: 1724857475}
+  - component: {fileID: 1724857478}
   m_Layer: 0
   m_Name: TowerSlab (37)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6461,6 +7144,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1724857473}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1724857478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724857473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 450
+  TowerHealth: 100
+  TowerRange: 15
+  TowerDamage: 8
+  attackSpeed: 2
+  rotateSpeed: 5
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: a6f2ac887e3f7614a81ba80193741148, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &1735215569
 GameObject:
   m_ObjectHideFlags: 0
@@ -6553,9 +7257,10 @@ GameObject:
   - component: {fileID: 1738155460}
   - component: {fileID: 1738155459}
   - component: {fileID: 1738155458}
+  - component: {fileID: 1738155461}
   m_Layer: 0
   m_Name: TowerSlab (68)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6639,6 +7344,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1738155456}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1738155461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738155456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 100
+  TowerHealth: 50
+  TowerRange: 8
+  TowerDamage: 2
+  attackSpeed: 3
+  rotateSpeed: 10
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &1741953007
 GameObject:
   m_ObjectHideFlags: 0
@@ -6651,9 +7377,10 @@ GameObject:
   - component: {fileID: 1741953011}
   - component: {fileID: 1741953010}
   - component: {fileID: 1741953009}
+  - component: {fileID: 1741953012}
   m_Layer: 0
   m_Name: TowerSlab (65)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6737,6 +7464,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1741953007}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1741953012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741953007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 100
+  TowerHealth: 50
+  TowerRange: 8
+  TowerDamage: 2
+  attackSpeed: 3
+  rotateSpeed: 10
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &1771829724
 GameObject:
   m_ObjectHideFlags: 0
@@ -6749,9 +7497,10 @@ GameObject:
   - component: {fileID: 1771829728}
   - component: {fileID: 1771829727}
   - component: {fileID: 1771829726}
+  - component: {fileID: 1771829729}
   m_Layer: 0
   m_Name: TowerSlab (86)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6835,6 +7584,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1771829724}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1771829729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771829724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 200
+  TowerHealth: 75
+  TowerRange: 10
+  TowerDamage: 4
+  attackSpeed: 2
+  rotateSpeed: 8
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &1799647449
 GameObject:
   m_ObjectHideFlags: 0
@@ -6847,9 +7617,10 @@ GameObject:
   - component: {fileID: 1799647453}
   - component: {fileID: 1799647452}
   - component: {fileID: 1799647451}
+  - component: {fileID: 1799647454}
   m_Layer: 0
   m_Name: TowerSlab (61)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6933,6 +7704,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799647449}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1799647454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799647449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 200
+  TowerHealth: 75
+  TowerRange: 10
+  TowerDamage: 4
+  attackSpeed: 2
+  rotateSpeed: 8
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &1882175279
 GameObject:
   m_ObjectHideFlags: 0
@@ -7125,9 +7917,10 @@ GameObject:
   - component: {fileID: 1895871425}
   - component: {fileID: 1895871424}
   - component: {fileID: 1895871423}
+  - component: {fileID: 1895871426}
   m_Layer: 0
   m_Name: TowerSlab (26)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7211,6 +8004,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1895871421}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1895871426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895871421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 450
+  TowerHealth: 100
+  TowerRange: 15
+  TowerDamage: 8
+  attackSpeed: 2
+  rotateSpeed: 5
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: a6f2ac887e3f7614a81ba80193741148, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &1906767266
 GameObject:
   m_ObjectHideFlags: 0
@@ -7223,9 +8037,10 @@ GameObject:
   - component: {fileID: 1906767270}
   - component: {fileID: 1906767269}
   - component: {fileID: 1906767268}
+  - component: {fileID: 1906767271}
   m_Layer: 0
   m_Name: TowerSlab (83)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7309,6 +8124,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1906767266}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1906767271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906767266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 100
+  TowerHealth: 50
+  TowerRange: 8
+  TowerDamage: 2
+  attackSpeed: 3
+  rotateSpeed: 10
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &1935448828
 GameObject:
   m_ObjectHideFlags: 0
@@ -7418,9 +8254,10 @@ GameObject:
   - component: {fileID: 1961415193}
   - component: {fileID: 1961415192}
   - component: {fileID: 1961415191}
+  - component: {fileID: 1961415194}
   m_Layer: 0
   m_Name: TowerSlab (45)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7504,6 +8341,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1961415189}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1961415194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961415189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 200
+  TowerHealth: 75
+  TowerRange: 10
+  TowerDamage: 4
+  attackSpeed: 2
+  rotateSpeed: 8
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &1963925872
 GameObject:
   m_ObjectHideFlags: 0
@@ -7613,9 +8471,10 @@ GameObject:
   - component: {fileID: 1986310069}
   - component: {fileID: 1986310068}
   - component: {fileID: 1986310067}
+  - component: {fileID: 1986310070}
   m_Layer: 0
   m_Name: TowerSlab (41)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7699,6 +8558,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986310065}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1986310070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986310065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 450
+  TowerHealth: 100
+  TowerRange: 15
+  TowerDamage: 8
+  attackSpeed: 2
+  rotateSpeed: 5
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: a6f2ac887e3f7614a81ba80193741148, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &1995778151
 GameObject:
   m_ObjectHideFlags: 0
@@ -7711,9 +8591,10 @@ GameObject:
   - component: {fileID: 1995778155}
   - component: {fileID: 1995778154}
   - component: {fileID: 1995778153}
+  - component: {fileID: 1995778156}
   m_Layer: 0
   m_Name: TowerSlab (31)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7797,6 +8678,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1995778151}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1995778156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995778151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 100
+  TowerHealth: 50
+  TowerRange: 8
+  TowerDamage: 2
+  attackSpeed: 3
+  rotateSpeed: 10
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &2010651561
 GameObject:
   m_ObjectHideFlags: 0
@@ -7809,9 +8711,10 @@ GameObject:
   - component: {fileID: 2010651565}
   - component: {fileID: 2010651564}
   - component: {fileID: 2010651563}
+  - component: {fileID: 2010651566}
   m_Layer: 0
   m_Name: TowerSlab (20)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7895,6 +8798,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2010651561}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2010651566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010651561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 100
+  TowerHealth: 50
+  TowerRange: 8
+  TowerDamage: 2
+  attackSpeed: 3
+  rotateSpeed: 10
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &2022991409
 GameObject:
   m_ObjectHideFlags: 0
@@ -8004,9 +8928,10 @@ GameObject:
   - component: {fileID: 2051839930}
   - component: {fileID: 2051839929}
   - component: {fileID: 2051839928}
+  - component: {fileID: 2051839931}
   m_Layer: 0
   m_Name: TowerSlab (1)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8090,6 +9015,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051839926}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2051839931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051839926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 200
+  TowerHealth: 75
+  TowerRange: 10
+  TowerDamage: 4
+  attackSpeed: 2
+  rotateSpeed: 8
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: 243fd7923294db7409b7daef413681c2, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &2068670409
 GameObject:
   m_ObjectHideFlags: 0
@@ -8199,9 +9145,10 @@ GameObject:
   - component: {fileID: 2078522196}
   - component: {fileID: 2078522195}
   - component: {fileID: 2078522194}
+  - component: {fileID: 2078522197}
   m_Layer: 0
   m_Name: TowerSlab (33)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8285,6 +9232,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2078522192}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2078522197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078522192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 450
+  TowerHealth: 100
+  TowerRange: 15
+  TowerDamage: 8
+  attackSpeed: 2
+  rotateSpeed: 5
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: a6f2ac887e3f7614a81ba80193741148, type: 3}
+  CurrentTarget: {fileID: 0}
 --- !u!1 &2098453606
 GameObject:
   m_ObjectHideFlags: 0
@@ -8660,9 +9628,10 @@ GameObject:
   - component: {fileID: 2144372756}
   - component: {fileID: 2144372755}
   - component: {fileID: 2144372754}
+  - component: {fileID: 2144372757}
   m_Layer: 0
   m_Name: TowerSlab (16)
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8746,3 +9715,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2144372752}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2144372757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144372752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2869561165a219040834508a3c2a52b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerCost: 100
+  TowerHealth: 50
+  TowerRange: 8
+  TowerDamage: 2
+  attackSpeed: 3
+  rotateSpeed: 10
+  targetFarthestEnemies: 0
+  TowerPreFab: {fileID: 919132149155446097, guid: eff9c26ef098fd344a1126376cffcb70, type: 3}
+  CurrentTarget: {fileID: 0}
